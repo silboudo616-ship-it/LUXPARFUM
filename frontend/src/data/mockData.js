@@ -1,7 +1,7 @@
 export const perfumes = [
   {
     id: 'p1',
-    name: 'Tom Ford Noir',
+    name: 'Tom Ford Noir de Noir',
     collection: 'Master',
     gender: 'Hommes',
     price: 185000,
