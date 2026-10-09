@@ -95,7 +95,23 @@ export const perfumes = [
     availability: 'Sur réservation',
     image: 'https://images.unsplash.com/photo-1594223274512-ad4803739b7c?auto=format&fit=crop&q=80&w=1200',
     imageAlt: 'Flacon Bois de Cèdre',
-    description: 'Une ode aux cèdres millénaires du Liban. Un accord boisé puissant, relevé par la vivacité du poivre noir.'
+  },
+  {
+    id: 'p7',
+    name: 'LIQUID BRUN',
+    collection: 'Premium',
+    gender: 'Hommes',
+    price: 25000,
+    volume: '100ml',
+    origin: 'French Avenue et Fragrance World',
+    olfactoryFamily: 'orientale, boisée et gourmande.',
+    notes: 'liquid brun appartient au registre des parfums chauds, épicés, boisés et gourmands.',
+    availability: 'Disponible',
+    image: 'https://cdn.notinoimg.com/detail_main_lq/french_avenue/6290360375694_02-o/liquid-brun___250214.jpg',
+    imageAlt: 'Flacon LIQUID BRUN',
+    description: 'LIQUID BRUN- l\'élégance dans toute sa profondeur. Une fragrance chaleureuse et séduisante, pensé pour l\'homme qui apprécie les accords enveloppants et les sillages au caractère affirmé. son univers boisé et gourmand apporte une touche de sophistication, idéale pour les soirées où chaque détail compte. liquid brun appartient au registre des parfums chauds, épicés, boisés et gourmands. A PORTER: En soirée et lors des sorties. Pendant les périodes fraîches. Pour un rendez-vous ou une occasion spéciale.',
+    type: 'Eau de Parfum',
+    duration: '8 à 12heures'
   }
 ];
 
