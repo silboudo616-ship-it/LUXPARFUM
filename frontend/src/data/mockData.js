@@ -112,6 +112,57 @@ export const perfumes = [
     description: 'LIQUID BRUN- l\'élégance dans toute sa profondeur. Une fragrance chaleureuse et séduisante, pensé pour l\'homme qui apprécie les accords enveloppants et les sillages au caractère affirmé. son univers boisé et gourmand apporte une touche de sophistication, idéale pour les soirées où chaque détail compte. liquid brun appartient au registre des parfums chauds, épicés, boisés et gourmands. A PORTER: En soirée et lors des sorties. Pendant les périodes fraîches. Pour un rendez-vous ou une occasion spéciale.',
     type: 'Eau de Parfum',
     duration: '8 à 12heures'
+  },
+  {
+    id: 'p8',
+    name: 'RIFAAQAT ADORN- Paris Corner',
+    collection: 'Premium',
+    gender: 'Mixte',
+    price: 20000,
+    volume: '50ml',
+    origin: 'PARIS CORNER',
+    olfactoryFamily: 'Poivre rose. Coriandre. Mandarine. Violette',
+    notes: 'Cèdre. Patchouli. Mousse de chêne. Ambre gris. Vanille. Benjoin. Notes boisées',
+    availability: 'Disponible',
+    image: 'https://www.pariscornerperfumes.com/cdn/shop/files/RifaaqatAdorn1.jpg?v=1718466163&width=1946',
+    imageAlt: 'Flacon Rifaaqat Adorn',
+    description: 'Rifaaqat Adorn- Une élégance qui se révèle avec subtilité. Une ouverture épicée et lumineuse, un cœur boisé profond et un fond chaleureux aux accent de vanille et de benjoin. une fragrance qui conjugue caractère et raffinement dans une composition équilibrée. A PORTER: En journée comme en soirée. Pour les rendez-vous. Pendant les périodes fraîches ou tempérées',
+    type: 'Eau de Parfum',
+    duration: '8 à 12heures'
+  },
+  {
+    id: 'p9',
+    name: '9PM ELEXIR AFNAN',
+    collection: 'Premium',
+    gender: 'Hommes',
+    price: 15000,
+    volume: '100ml',
+    origin: 'Afnan Perfumes',
+    olfactoryFamily: 'Bergamote. Lavandin. Cannelle. Pomme. Muguet. Fleur d\'oranger...',
+    notes: 'Patchouli. Ambre. Vanille. Fève tonka',
+    availability: 'Disponible',
+    image: 'http://afnan.com/cdn/shop/files/9PM_ELIXIR-1.png?v=1753259405&width=2048',
+    imageAlt: 'Flacon 9PM Elixir',
+    description: '9PM- le charme des heures les plus séduisantes. Une fragrance masculine qui marie la fraîcheur fruitée de la pomme aux épices et à la douceur enveloppante de la vanille. son caractère chaleureux et contemporain en fait un compagnon idéal pour les soirées et les moments où l\'on souhaite affirmer sa personnalité.',
+    type: 'Eau de Parfum',
+    duration: '6 à 10heurs'
+  },
+  {
+    id: 'p10',
+    name: 'INTENSE',
+    collection: 'Premium',
+    gender: 'Hommes',
+    price: 10000,
+    volume: '50ml',
+    origin: 'Armaf',
+    olfactoryFamily: 'ambrée, moderne, affirmé et sophistiqué',
+    notes: 'Bergamote, Poivre rose, Fleur d\'oranger, Jasmin',
+    availability: 'Disponible',
+    image: 'http://armaf.com/cdn/shop/files/Q-106DCLUBDENUITINTENSE_M_FIF_900x_f04752b1-087d-4206-8985-e13e96c5896d.webp?v=1762289750&width=2048',
+    imageAlt: 'Flacon Club de Nuit Intense Man',
+    description: 'CLUB DE NUIT INTENSE - Une présence qui ne passe pas inaperçu. Une fragrance masculine où la fraîcheur des agrumes rencontre les épices, les notes aromatiques et la profondeur des bois ambré. Une composition élégante et contemporaine , idéale pour l\'homme qui souhaite affirmer son style avec assurance. A PORTER: En soirée et lors d\'événements Pendant les périodes fraîches Pour ceux qui aiment les parfum masculins présent et structurés',
+    type: 'Eau de Parfum',
+    duration: '8 à 12heures'
   }
 ];
 
