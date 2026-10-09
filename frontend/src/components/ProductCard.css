@@ -1,0 +1,114 @@
+.pcard {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+/* IMAGE */
+.pcard__img-wrap {
+  display: block;
+  overflow: hidden;
+  background: #EDE9DF;
+  aspect-ratio: 3/4;
+  position: relative;
+}
+
+.pcard--large .pcard__img-wrap {
+  aspect-ratio: 4/5;
+}
+
+.pcard__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
+  transition: transform 0.9s var(--ease-luxury);
+}
+
+.pcard__img-wrap:hover .pcard__img {
+  transform: scale(1.06);
+}
+
+/* MASTER OVERLAY */
+.pcard__master-overlay {
+  position: absolute;
+  bottom: 1.25rem;
+  left: 1.25rem;
+  background: rgba(11,11,11,0.85);
+  border: 1px solid var(--gold);
+  padding: 0.6rem 1rem;
+  backdrop-filter: blur(4px);
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+}
+.pcard__master-num {
+  font-family: var(--font-serif);
+  font-size: 1.1rem;
+  color: var(--gold);
+  line-height: 1;
+}
+.pcard__master-label {
+  font-family: var(--font-sans);
+  font-size: 0.55rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: rgba(255,255,255,0.5);
+}
+
+/* BODY */
+.pcard__body {
+  padding: 1.5rem 0 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.pcard__meta {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.pcard__dot {
+  width: 3px;
+  height: 3px;
+  border-radius: 50%;
+  background: var(--grey-lt);
+}
+
+.pcard__name {
+  font-family: var(--font-serif);
+  font-size: clamp(1.1rem, 1.8vw, 1.5rem);
+  font-weight: 400;
+  color: var(--black);
+  line-height: 1.2;
+  transition: color var(--t-fast);
+}
+.pcard__name:hover { color: var(--grey); }
+
+.pcard__footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 0.75rem;
+  padding-top: 0.75rem;
+  border-top: 1px solid var(--grey-lt);
+}
+
+.pcard__cta {
+  font-family: var(--font-sans);
+  font-size: 0.6875rem;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--grey);
+  transition: color var(--t-fast), transform var(--t-fast);
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+}
+.pcard__cta:hover {
+  color: var(--black);
+  transform: translateX(3px);
+}
