@@ -57,7 +57,7 @@ const Hero = () => {
         <div className="hero__visual">
           <div className="hero__visual-frame">
             <img
-              src="/lux-bottle.jpg"
+              src={`${import.meta.env.BASE_URL}lux-bottle.jpg`}
               alt="Flacon Lux Parfum"
               className="hero__visual-img"
               loading="eager"
