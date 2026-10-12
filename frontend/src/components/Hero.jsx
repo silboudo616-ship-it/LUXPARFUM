@@ -53,12 +53,12 @@ const Hero = () => {
           </div>
         </div>
 
-        {/* RIGHT PRODUCT IMAGE */}
+        {/* RIGHT PRODUCT IMAGE / EMBLEM */}
         <div className="hero__visual">
           <div className="hero__visual-frame">
             <img
-              src={`${import.meta.env.BASE_URL}lux-bottle.jpg`}
-              alt="Flacon LUX AURA"
+              src={`${import.meta.env.BASE_URL}logo.jpg`}
+              alt="Emblème LUX AURA"
               className="hero__visual-img"
               loading="eager"
             />

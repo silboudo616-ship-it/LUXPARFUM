@@ -124,31 +124,35 @@
 }
 .hero__visual-frame {
   width: min(420px, 90%);
-  aspect-ratio: 2/3;
+  aspect-ratio: 1 / 1;
   overflow: hidden;
-  background: rgba(255,255,255,0.04);
-  border: 1px solid rgba(255,255,255,0.08);
+  background: var(--emerald-card);
+  border: 1px solid rgba(212, 175, 55, 0.4);
+  border-radius: 16px;
+  box-shadow: 0 15px 45px rgba(0, 0, 0, 0.6), 0 0 35px rgba(212, 175, 55, 0.15);
 }
 .hero__visual-img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: center top;
+  object-position: center;
   transition: transform 1.5s var(--ease-luxury);
 }
-.hero__visual-frame:hover .hero__visual-img { transform: scale(1.04); }
+.hero__visual-frame:hover .hero__visual-img { transform: scale(1.05); }
 
 /* BADGE */
 .hero__badge {
   position: absolute;
   bottom: -1.5rem;
   left: 0;
-  background: var(--black);
+  background: var(--emerald-black);
   border: 1px solid var(--gold);
+  border-radius: 4px;
   padding: 1rem 1.5rem;
   display: flex;
   align-items: baseline;
   gap: 0.4rem;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5);
 }
 .hero__badge-number {
   font-family: var(--font-serif);
