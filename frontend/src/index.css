@@ -4,13 +4,22 @@
    DESIGN TOKENS
 ======================== */
 :root {
-  --black:   #0B0B0B;
-  --ivory:   #F5F1E8;
-  --white:   #FFFFFF;
-  --gold:    #C8A96B;
-  --grey:    #8D8981;
-  --grey-lt: #D8D4CC;
-  --grey-dk: #3A3835;
+  /* Emerald & Gold Luxury Palette matching LUX AURA logo */
+  --emerald-deep:    #07221A; /* Primary background */
+  --emerald-dark:    #0B2D22; /* Card & section surface */
+  --emerald-surface: #10382B; /* Hover / elevated */
+  --emerald-black:   #04150F; /* Deepest tone */
+
+  --black:           #07221A;
+  --ivory:           #F7F5EF;
+  --ivory-muted:     #D8D2C2;
+  --white:           #FFFFFF;
+  --gold:            #D4AF37;
+  --gold-light:      #F3DF99;
+  --gold-dark:       #A8862A;
+  --grey:            #8EA69B;
+  --grey-lt:         rgba(212, 175, 55, 0.16);
+  --grey-dk:         #133A2E;
 
   --font-serif: 'Cormorant Garamond', Georgia, serif;
   --font-sans:  'Inter', system-ui, sans-serif;
@@ -35,8 +44,8 @@ html { scroll-behavior: smooth; }
 body {
   font-family: var(--font-sans);
   font-weight: 300;
-  background: var(--ivory);
-  color: var(--black);
+  background: var(--emerald-deep);
+  color: var(--ivory);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   overflow-x: hidden;
@@ -60,7 +69,7 @@ button { font-family: inherit; cursor: pointer; }
   font-weight: 500;
   letter-spacing: 0.18em;
   text-transform: uppercase;
-  color: var(--grey);
+  color: var(--gold);
 }
 
 .t-display {
@@ -69,6 +78,7 @@ button { font-family: inherit; cursor: pointer; }
   font-size: clamp(2.8rem, 6vw, 5.5rem);
   line-height: 1.05;
   letter-spacing: -0.01em;
+  color: var(--ivory);
 }
 
 .t-heading {
@@ -76,6 +86,7 @@ button { font-family: inherit; cursor: pointer; }
   font-weight: 400;
   font-size: clamp(1.75rem, 3.5vw, 3rem);
   line-height: 1.15;
+  color: var(--ivory);
 }
 
 .t-subheading {
@@ -84,13 +95,14 @@ button { font-family: inherit; cursor: pointer; }
   font-style: italic;
   font-size: clamp(1.25rem, 2.5vw, 1.75rem);
   line-height: 1.35;
+  color: var(--gold-light);
 }
 
 .t-body {
   font-size: 0.9375rem;
   font-weight: 300;
   line-height: 1.75;
-  color: var(--grey-dk);
+  color: var(--ivory-muted);
 }
 
 .t-price {
@@ -98,7 +110,7 @@ button { font-family: inherit; cursor: pointer; }
   font-size: 0.875rem;
   font-weight: 400;
   letter-spacing: 0.08em;
-  color: var(--black);
+  color: var(--gold-light);
 }
 
 /* ========================
@@ -123,20 +135,21 @@ button { font-family: inherit; cursor: pointer; }
   letter-spacing: 0.18em;
   text-transform: uppercase;
   padding: 1.1rem 2.5rem;
-  border: 1px solid var(--black);
+  border: 1px solid var(--gold);
   background: transparent;
-  color: var(--black);
-  transition: background var(--t-fast), color var(--t-fast), border-color var(--t-fast);
+  color: var(--gold);
+  transition: background var(--t-fast), color var(--t-fast), border-color var(--t-fast), box-shadow var(--t-fast);
   white-space: nowrap;
 }
 
 .btn:hover {
-  background: var(--black);
-  color: var(--ivory);
+  background: var(--gold);
+  color: var(--black);
+  box-shadow: 0 4px 20px rgba(212, 175, 55, 0.25);
 }
 
 .btn--light {
-  border-color: var(--ivory);
+  border-color: rgba(247, 245, 239, 0.35);
   color: var(--ivory);
 }
 .btn--light:hover {
@@ -146,20 +159,23 @@ button { font-family: inherit; cursor: pointer; }
 
 .btn--gold {
   border-color: var(--gold);
+  background: rgba(212, 175, 55, 0.08);
   color: var(--gold);
 }
 .btn--gold:hover {
   background: var(--gold);
-  color: var(--white);
+  color: var(--black);
 }
 
 .btn--filled {
-  background: var(--black);
-  color: var(--ivory);
+  background: var(--gold);
+  color: var(--black);
+  border-color: var(--gold);
+  font-weight: 600;
 }
 .btn--filled:hover {
-  background: var(--grey-dk);
-  border-color: var(--grey-dk);
+  background: var(--gold-light);
+  border-color: var(--gold-light);
 }
 
 /* ========================
@@ -170,6 +186,7 @@ button { font-family: inherit; cursor: pointer; }
   height: 1px;
   background: var(--gold);
   margin: 2rem auto;
+  opacity: 0.6;
 }
 
 /* ========================
@@ -199,6 +216,6 @@ button { font-family: inherit; cursor: pointer; }
 /* ========================
    SCROLLBAR
 ======================== */
-::-webkit-scrollbar { width: 4px; }
-::-webkit-scrollbar-track { background: var(--ivory); }
-::-webkit-scrollbar-thumb { background: var(--grey-lt); border-radius: 2px; }
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: var(--emerald-black); }
+::-webkit-scrollbar-thumb { background: var(--emerald-surface); border: 1px solid var(--grey-lt); border-radius: 3px; }

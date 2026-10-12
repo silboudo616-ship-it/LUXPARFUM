@@ -14,7 +14,7 @@ const Hero = () => {
   }, []);
 
   return (
-    <section className="hero" aria-label="Introduction Lux Parfum">
+    <section className="hero" aria-label="Introduction LUX AURA">
       {/* BACKGROUND IMAGE */}
       <div className="hero__bg">
         <img
@@ -58,7 +58,7 @@ const Hero = () => {
           <div className="hero__visual-frame">
             <img
               src={`${import.meta.env.BASE_URL}lux-bottle.jpg`}
-              alt="Flacon Lux Parfum"
+              alt="Flacon LUX AURA"
               className="hero__visual-img"
               loading="eager"
             />

@@ -3,13 +3,14 @@
   grid-template-columns: 280px 1fr;
   min-height: 100vh;
   padding-top: 6rem;
-  background: var(--ivory);
+  background: var(--emerald-deep);
+  color: var(--ivory);
 }
 
 /* SIDEBAR */
 .account-sidebar {
-  background: var(--white);
-  border-right: 1px solid var(--grey-lt);
+  background: var(--emerald-dark);
+  border-right: 1px solid rgba(212, 175, 55, 0.2);
   padding: 3rem 2.5rem;
   display: flex;
   flex-direction: column;
@@ -24,13 +25,14 @@
   align-items: center;
   gap: 1rem;
   padding-bottom: 2rem;
-  border-bottom: 1px solid var(--grey-lt);
+  border-bottom: 1px solid rgba(212, 175, 55, 0.2);
 }
 
 .account-avatar {
   width: 48px; height: 48px;
-  background: var(--black);
-  color: var(--white);
+  background: var(--emerald-surface);
+  border: 1px solid var(--gold);
+  color: var(--gold);
   font-family: var(--font-serif);
   font-size: 1.25rem;
   border-radius: 50%;
@@ -44,6 +46,7 @@
   font-family: var(--font-serif);
   font-size: 1.1rem;
   font-weight: 400;
+  color: var(--ivory);
 }
 .account-email { color: var(--grey); }
 
@@ -60,11 +63,11 @@
   font-weight: 300;
   color: var(--grey);
   padding: 0.65rem 1rem;
-  border-radius: 2px;
+  border-radius: 4px;
   transition: color var(--t-fast), background var(--t-fast);
 }
-.account-nav__link:hover { color: var(--black); background: var(--ivory); }
-.account-nav__link.active { color: var(--black); background: var(--ivory); font-weight: 500; }
+.account-nav__link:hover { color: var(--gold); background: var(--emerald-surface); }
+.account-nav__link.active { color: var(--gold); background: var(--emerald-surface); font-weight: 500; }
 
 .account-logout {
   background: none;
@@ -79,7 +82,7 @@
   cursor: pointer;
   transition: color var(--t-fast);
 }
-.account-logout:hover { color: var(--black); }
+.account-logout:hover { color: #e57373; }
 
 /* MAIN */
 .account-main {
@@ -92,6 +95,7 @@
   font-size: clamp(1.75rem, 3vw, 2.5rem);
   font-weight: 400;
   margin-bottom: 2.5rem;
+  color: var(--ivory);
 }
 
 /* DASHBOARD CARDS */
@@ -102,8 +106,9 @@
   margin-top: 2.5rem;
 }
 .account-card {
-  background: var(--white);
-  border: 1px solid var(--grey-lt);
+  background: var(--emerald-dark);
+  border: 1px solid rgba(212, 175, 55, 0.2);
+  border-radius: 4px;
   padding: 2rem;
   display: flex;
   flex-direction: column;
@@ -115,7 +120,7 @@
   font-family: var(--font-serif);
   font-size: 2.5rem;
   font-weight: 300;
-  color: var(--black);
+  color: var(--gold);
   line-height: 1;
 }
 .account-card__label { color: var(--grey); }

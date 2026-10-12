@@ -29,10 +29,17 @@ const Header = () => {
         <div className="header__inner">
 
           {/* LEFT — LOGO */}
-          <Link to="/" className="header__logo">
-            <span className="header__logo-lux">LUX</span>
-            <span className="header__logo-sep"> </span>
-            <span className="header__logo-parfum">PARFUM</span>
+          <Link to="/" className="header__logo" aria-label="LUX AURA Accueil">
+            <img 
+              src={`${import.meta.env.BASE_URL}logo.jpg`} 
+              alt="LUX AURA Logo" 
+              className="header__logo-img" 
+            />
+            <span className="header__logo-text">
+              <span className="header__logo-lux">LUX</span>
+              <span className="header__logo-sep"> </span>
+              <span className="header__logo-parfum">AURA</span>
+            </span>
           </Link>
 
           {/* CENTER — NAV */}

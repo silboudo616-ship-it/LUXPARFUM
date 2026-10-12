@@ -43,7 +43,7 @@ const Home = () => {
       {/* ── INTRO EDITORIAL ── */}
       <section className="home__intro">
         <div className="home__intro-inner container reveal">
-          <p className="home__intro-eyebrow t-label">La Maison Lux Parfum</p>
+          <p className="home__intro-eyebrow t-label">La Maison LUX AURA</p>
           <h2 className="home__intro-title">
             L'art de la parfumerie,<br />
             <em>porté à son apogée.</em>
@@ -160,7 +160,7 @@ const Home = () => {
         <div className="home__story-img-side">
           <img
             src="https://images.unsplash.com/photo-1592945403244-b3fbafd7f539?auto=format&fit=crop&q=80&w=1200"
-            alt="Savoir-faire Lux Parfum"
+            alt="Savoir-faire LUX AURA"
             loading="lazy"
           />
         </div>
@@ -172,7 +172,7 @@ const Home = () => {
           </blockquote>
           <p className="t-body" style={{ marginTop: '2rem', maxWidth: '44ch' }}>
             Fondée sur la conviction que la rareté est la plus grande des élégances,
-            Lux Parfum sélectionne les matières premières les plus précieuses pour
+            LUX AURA sélectionne les matières premières les plus précieuses pour
             créer des fragrances qui transcendent le temps.
           </p>
           <Link to="/collections" className="btn" style={{ marginTop: '3rem' }}>
@@ -191,7 +191,7 @@ const Home = () => {
           </p>
           <form
             className="home__newsletter-form"
-            onSubmit={(e) => { e.preventDefault(); alert('Vous êtes maintenant inscrit à la lettre de la maison Lux Parfum.'); e.target.reset(); }}
+            onSubmit={(e) => { e.preventDefault(); alert('Vous êtes maintenant inscrit à la lettre de la maison LUX AURA.'); e.target.reset(); }}
           >
             <input
               type="email"

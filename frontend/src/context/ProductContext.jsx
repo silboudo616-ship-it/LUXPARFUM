@@ -10,14 +10,14 @@ const SETTINGS_KEY = 'luxe_aura_settings';
 const AUTH_KEY = 'luxe_aura_admin_auth';
 
 const defaultSettings = {
-  siteName: 'LUX PARFUM',
+  siteName: 'LUX AURA',
   heroTitle: "L'Essence\ndu Raffinement.",
   heroSubtitle: 'Collections Automne – Hiver 2026',
   heroCta: 'Découvrir la Collection',
   currency: 'FCFA',
-  contactEmail: 'contact@luxparfum.com',
+  contactEmail: 'contact@luxaura.com',
   contactPhone: '+225 07 00 00 00',
-  aboutText: "Fondée sur la conviction que la rareté est la plus grande des élégances, Lux Parfum sélectionne les matières premières les plus précieuses pour créer des fragrances qui transcendent le temps.",
+  aboutText: "Fondée sur la conviction que la rareté est la plus grande des élégances, LUX AURA sélectionne les matières premières les plus précieuses pour créer des fragrances qui transcendent le temps.",
   adminPin: '1234',
 };
 

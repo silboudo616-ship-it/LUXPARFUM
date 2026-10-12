@@ -47,7 +47,7 @@ const Collections = () => {
       {/* HERO BANNER */}
       <div className="coll-banner">
         <div className="coll-banner__inner container">
-          <p className="t-label reveal" style={{ color: 'var(--gold)', marginBottom: '1rem' }}>Lux Parfum</p>
+          <p className="t-label reveal" style={{ color: 'var(--gold)', marginBottom: '1rem' }}>LUX AURA</p>
           <h1 className="coll-banner__title reveal reveal-delay-1">{pageTitle}</h1>
           <p className="coll-banner__count reveal reveal-delay-2 t-label">
             {filtered.length} fragrance{filtered.length !== 1 ? 's' : ''}

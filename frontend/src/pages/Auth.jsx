@@ -33,7 +33,14 @@ const Auth = () => {
       </div>
 
       <div className="auth-form-side">
-        <Link to="/" className="auth-logo">LUX PARFUM</Link>
+        <Link to="/" className="auth-logo" aria-label="LUX AURA Accueil">
+          <img 
+            src={`${import.meta.env.BASE_URL}logo.jpg`} 
+            alt="LUX AURA" 
+            className="auth-logo-img" 
+          />
+          <span>LUX AURA</span>
+        </Link>
 
         {success ? (
           <div className="auth-success">

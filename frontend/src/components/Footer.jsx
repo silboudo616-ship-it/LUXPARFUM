@@ -18,7 +18,14 @@ const Footer = () => {
 
         {/* BRAND */}
         <div className="footer__brand">
-          <Link to="/" className="footer__logo">LUX PARFUM</Link>
+          <Link to="/" className="footer__logo-wrap" aria-label="LUX AURA Accueil">
+            <img 
+              src={`${import.meta.env.BASE_URL}logo.jpg`} 
+              alt="LUX AURA" 
+              className="footer__logo-img" 
+            />
+            <span className="footer__logo">LUX AURA</span>
+          </Link>
           <p className="footer__tagline t-body">
             La haute parfumerie,<br />portée à son apogée.
           </p>
@@ -81,8 +88,8 @@ const Footer = () => {
 
       {/* BOTTOM BAR */}
       <div className="footer__bottom container">
-        <p className="t-label" style={{ color: 'rgba(255,255,255,0.3)' }}>
-          © {new Date().getFullYear()} Lux Parfum. Tous droits réservés.
+        <p className="t-label" style={{ color: 'rgba(255,255,255,0.4)' }}>
+          © {new Date().getFullYear()} LUX AURA. Tous droits réservés.
         </p>
         <div className="footer__legal">
           <a href="#" className="footer__legal-link">Mentions Légales</a>

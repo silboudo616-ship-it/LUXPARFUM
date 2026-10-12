@@ -21,7 +21,10 @@ const LoginScreen = ({ onLogin }) => {
   return (
     <div className="admin__login">
       <form className="admin__login-card" onSubmit={handleSubmit}>
-        <p className="admin__login-logo">LUXE AURA</p>
+        <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '0.75rem', marginBottom: '1rem' }}>
+          <img src={`${import.meta.env.BASE_URL}logo.jpg`} alt="LUX AURA" style={{ width: '56px', height: '56px', borderRadius: '10px', border: '1px solid rgba(212, 175, 55, 0.45)', boxShadow: '0 4px 15px rgba(0,0,0,0.5)' }} />
+          <p className="admin__login-logo">LUX AURA</p>
+        </div>
         <h1 className="admin__login-title">Administration</h1>
         {error && <p className="admin__login-error">{error}</p>}
         <input
@@ -487,9 +490,12 @@ const Admin = () => {
       {/* ── Sidebar ── */}
       <aside className={`admin__sidebar ${sidebarOpen ? 'admin__sidebar--open' : ''}`}>
         <div className="admin__sidebar-header">
-          <div className="admin__sidebar-logo">
-            LUXE AURA
-            <span>Administration</span>
+          <div className="admin__sidebar-logo" style={{ display: 'flex', alignItems: 'center', gap: '0.75rem' }}>
+            <img src={`${import.meta.env.BASE_URL}logo.jpg`} alt="LUX AURA" style={{ width: '38px', height: '38px', borderRadius: '6px', border: '1px solid rgba(212, 175, 55, 0.35)', objectFit: 'cover' }} />
+            <div>
+              LUX AURA
+              <span>Administration</span>
+            </div>
           </div>
         </div>
         <div className="admin__sidebar-nav">

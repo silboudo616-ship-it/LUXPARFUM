@@ -34,7 +34,7 @@ const AccountLayout = ({ children }) => {
           <div className="account-avatar">S</div>
           <div>
             <p className="account-name">Salif</p>
-            <p className="account-email t-label">salif@luxparfum.com</p>
+            <p className="account-email t-label">salif@luxaura.com</p>
           </div>
         </div>
 
@@ -63,7 +63,7 @@ const Dashboard = () => (
   <div className="account-section">
     <p className="t-label" style={{ color: 'var(--gold)', marginBottom: '1rem' }}>Mon Cabinet Olfactif</p>
     <h1 className="account-section__title">Bonjour, Salif.</h1>
-    <p className="t-body" style={{ marginTop: '0.5rem', color: 'var(--grey)' }}>Bienvenue dans votre espace personnel Lux Parfum.</p>
+    <p className="t-body" style={{ marginTop: '0.5rem', color: 'var(--grey)' }}>Bienvenue dans votre espace personnel LUX AURA.</p>
 
     <div className="account-cards">
       <Link to="/compte/commandes" className="account-card">
